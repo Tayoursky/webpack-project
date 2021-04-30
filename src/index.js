@@ -1,5 +1,17 @@
 import './styles/index.scss'
 
+
+async function start() {
+    return await Promise.resolve('async is working')
+}
+start().then(console.log)
+
+class Other {
+    static id = Date.now()
+}
+
+console.log(Other.id)
+
 const primer = {
     first: 2,
     second: 1,
